@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add some basic styles for better readability and modern look */
+body {
+  font-family: 'Inter', sans-serif; /* Use a modern sans-serif font */
+  line-height: 1.6; /* Improve line spacing for readability */
+  color: #333; /* Darker text color for better contrast */
+  background-color: #f4f7f6; /* Light background color */
+}
+
+/* Removed explicit #222 color for headings */
+h1, h2, h3, h4, h5, h6 {
+  /* color: #222; */ /* Removed */
+  line-height: 1.2;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Basic container padding */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@screen sm {
+  .container {
+    max-width: 640px;
+  }
+}
+@screen md {
+  .container {
+    max-width: 768px;
+  }
+}
+@screen lg {
+  .container {
+    max-width: 1024px;
+  }
+}
+@screen xl {
+  .container {
+    max-width: 1280px;
+  }
+}
